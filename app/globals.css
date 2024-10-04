@@ -19,6 +19,54 @@ body {
   box-sizing: border-box;
 }
 
+table, th, td {
+  border-collapse: collapse;
+}
+
+.scrollbar-container::-webkit-scrollbar {
+  width: 5px; 
+  height: 20px;
+}
+
+/* Track */
+.scrollbar-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+.scrollbar-container::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+.scrollbar-container::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  display: block;
+  background: #555; /* Color of the scrollbar handle when hovered */
+}
+
+.scrollbar-x-container::-webkit-scrollbar {
+  width: 20px; 
+  height: 5px;
+}
+
+/* Track */
+.scrollbar-x-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+.scrollbar-x-container::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+.scrollbar-x-container::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  display: block;
+  background: #555; /* Color of the scrollbar handle when hovered */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
